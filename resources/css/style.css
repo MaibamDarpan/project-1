@@ -1,0 +1,231 @@
+:focus{
+    outline: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+/*========== Reuseable Components === */
+
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+    text-align: center;
+}
+ul li{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 4.2rem;
+    color: #fff;
+
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 2rem;
+    background: #fff;
+}
+h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn, .btn:visited, .btn:link{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.5rem 6rem;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    display: inline-block;
+}
+
+/*====== ===== Header Section ===== =====*/
+
+header{
+    background: #87509c;
+    height: 85vh;
+    position: relative;
+}
+nav .logo{
+    height: 3.5rem;
+    width: auto;
+    margin-top: 3.5rem;
+    float: left;
+}
+
+/*==== Main nav ==== */
+
+.main-nav{
+    float: right;
+    margin-top: 4rem;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.main-nav li a:visited,
+.main-nav li a:link{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(100,58,121,0);
+    padding: .6rem 1.6rem;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+    background: rgba(100,58,121,1);
+
+}
+
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.btn-hero:link, btn-hero:visited{
+    background: #eb7d4b;
+    border-color: #c86a40;
+}
+
+/* ==== ===== Service Section ====== */
+
+.service-section{
+    color: #fff;
+    text-align: center;
+    background: #1CB599;
+}
+.service-section h2::after{
+    background-color: #14a58c;
+}
+.service-section .services-icon{
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+.service-section .container .lead{
+    font-size: 2rem;
+}
+.service-section p{
+    font-size: 1.6rem;
+}
+
+/*=== ===== Team Section ===== */
+
+.team-section{
+    background: #e7f1f8;
+    text-align: center;
+
+}
+.team-section h2{
+    color: #3c4761;
+
+}
+.team-section h2::after{
+    background: #C8D9E5;
+}
+.team-member{
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.team-section h3{
+    color: #27283d;
+}
+.role{
+    display: inline-block;
+    color: #30bae7;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-top: .5rem;
+}
+.social-link{
+    margin-top: 4.5rem;
+
+}
+.social-link ul li{
+    display: inline-block;
+    margin: .5rem;
+}
+
+.social-link ul li a:link i::before{
+    content: '';
+    background: #bdd;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+
+}
+.social-link ul li a:link{
+    color: #fff;
+   
+    
+}
